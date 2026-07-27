@@ -1,7 +1,5 @@
-name: GNN
+name: 2026S
 channels:
-  - pytorch
-  - pyg
   - conda-forge
   - defaults
 
@@ -11,13 +9,13 @@ dependencies:
   
   # 2. 核心科学计算与机器学习库
   - numpy>=1.22
-  - pandas>=3.0
+  - pandas
   - matplotlib
-  - scikit-learn>=1.4.0
-  - xgboost==3.2.0
+  - scikit-learn
+  - xgboost
 
   - pytorch==2.2.*
-  - pyg==2.8.*
+  - pyg
 
   - rdkit
 
