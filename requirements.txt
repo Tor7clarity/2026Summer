@@ -1,0 +1,8 @@
+rdkit==2026.03.4
+torch==2.2.2+cpu
+torchvision==0.17.2+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch-scatter
+torch-sparse
+torch-geometric==2.8.0.post1
+--find-links https://data.pyg.org/whl/torch-2.2.0+cpu.html
