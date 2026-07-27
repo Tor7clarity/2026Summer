@@ -4,18 +4,21 @@ channels:
   - defaults
 
 dependencies:
-  # 1. 基础 Python 环境
+
   - python=3.11
-  
-  # 2. 核心科学计算与机器学习库
+
   - numpy>=1.22
   - pandas
   - matplotlib
   - scikit-learn
   - xgboost
 
-  - pytorch==2.2.*
-  - pyg
+  - pip
+  - pip:
+    - rdkit
+    - torch-scatter -f https://data.pyg.org/whl/torch-2.2.0+cpu.html
+    - torch-sparse -f https://data.pyg.org/whl/torch-2.2.0+cpu.html
+    - torch-geometric
 
   - rdkit
 
