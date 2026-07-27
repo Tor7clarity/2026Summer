@@ -1,0 +1,27 @@
+name: GNN
+channels:
+  - pytorch
+  - pyg
+  - conda-forge
+  - defaults
+
+dependencies:
+  # 1. 基础 Python 环境
+  - python=3.11
+  
+  # 2. 核心科学计算与机器学习库
+  - numpy>=1.22
+  - pandas>=1.4
+  - pandas==3.0.3
+  - matplotlib
+  - scikit-learn==1.9.0
+  - xgboost==3.2.0
+
+  - pytorch==2.2.2
+
+  - pyg==2.8.0
+
+  - rdkit==2026.03.4
+
+  - jupyter
+  - ipykernel
