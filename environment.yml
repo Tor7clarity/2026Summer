@@ -1,4 +1,5 @@
 name: 2026S
+
 channels:
   - conda-forge
   - defaults
@@ -6,21 +7,18 @@ channels:
 dependencies:
 
   - python=3.11
-
-  - numpy>=1.22
+  - numpy
   - pandas
   - matplotlib
   - scikit-learn
   - xgboost
-
-  - pip
-  - pip:
-    - rdkit
-    - torch-scatter -f https://data.pyg.org/whl/torch-2.2.0+cpu.html
-    - torch-sparse -f https://data.pyg.org/whl/torch-2.2.0+cpu.html
-    - torch-geometric
-
-  - rdkit
-
   - jupyter
   - ipykernel
+  - rdkit
+
+  - pip:
+      - torch
+      - torch-geometric
+
+
+
